@@ -25,11 +25,22 @@
                             Output
                         </a>
                         <div class="navdrop dropdown-menu dropdown-menu-sm-right">
-                            <a class="dropdown-item" href="{{route('admin.dashboard.download.all')}}">All to Excel</a>
-                            <a class="dropdown-item" href="{{route('admin.dashboard.download.males')}}">Males to Excel</a>
-                            <a class="dropdown-item" href="{{route('admin.dashboard.download.females')}}">Females to Excel</a>
-                            <a class="dropdown-item" href="{{route('admin.dashboard.download.eleven')}}">Grade Eleven to Excel</a>
-                            <a class="dropdown-item" href="{{route('admin.dashboard.download.twelve')}}">Grade Twelve to Excel</a>
+                            <div class="dropdown-header">
+                                Bulk Data
+                            </div>
+                            <a class="dropdown-item" href="{{route('admin.dashboard.download.all')}}"><i class="fas fa-download text-primary"></i> All to Excel</a>
+                            <a class="dropdown-item" href="{{route('admin.dashboard.download.males')}}"><i class="fas fa-download text-primary"></i> Males to Excel</a>
+                            <a class="dropdown-item" href="{{route('admin.dashboard.download.females')}}"><i class="fas fa-download text-primary"></i> Females to Excel</a>
+                            <a class="dropdown-item" href="{{route('admin.dashboard.download.eleven')}}"><i class="fas fa-download text-primary"></i> Grade Eleven to Excel</a>
+                            <a class="dropdown-item" href="{{route('admin.dashboard.download.twelve')}}"><i class="fas fa-download text-primary"></i> Grade Twelve to Excel</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-header">
+                                Separated Data
+                            </div>
+                            <a class="dropdown-item" href="{{route('admin.dashboard.download.elevenMales')}}"><i class="fas fa-download text-primary"></i> Grade Eleven Males to Excel</a>
+                            <a class="dropdown-item" href="{{route('admin.dashboard.download.elevenFemales')}}"><i class="fas fa-download text-primary"></i> Grade Eleven Females to Excel</a>
+                            <a class="dropdown-item" href="{{route('admin.dashboard.download.twelveMales')}}"><i class="fas fa-download text-primary"></i> Grade Twelve Males to Excel</a>
+                            <a class="dropdown-item" href="{{route('admin.dashboard.download.twelveFemales')}}"><i class="fas fa-download text-primary"></i> Grade Twelve Females to Excel</a>
                         </div>
                     </div>
                 </li>

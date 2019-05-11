@@ -6,9 +6,13 @@ use App\AdminKey;
 use App\Data;
 use App\Exports\AllDataExport;
 use App\Exports\ElevenDataExport;
+use App\Exports\ElevenFemalesExport;
+use App\Exports\ElevenMalesExport;
 use App\Exports\FemalesDataExport;
 use App\Exports\MalesDataExport;
 use App\Exports\TwelveDataExport;
+use App\Exports\TwelveFemalesExport;
+use App\Exports\TwelveMalesExport;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -91,4 +95,17 @@ class AdminController extends Controller
     public function downloadTwelve(){
         return Excel::download(new TwelveDataExport(), 'grade_twelve_data.xlsx');
     }
+    public function downloadElevenMales(){
+        return Excel::download(new ElevenMalesExport(), 'grade_eleven_males.xlsx');
+    }
+    public function downloadElevenFemales(){
+        return Excel::download(new ElevenFemalesExport(), 'grade_eleven_females.xlsx');
+    }
+    public function downloadTwelveMales(){
+        return Excel::download(new TwelveMalesExport(), 'grade_twelve_males.xlsx');
+    }
+    public function downloadTwelveFemales(){
+        return Excel::download(new TwelveFemalesExport(), 'grade_twelve_females.xlsx');
+    }
+
 }

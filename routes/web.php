@@ -32,6 +32,10 @@ Route::get('admin/dashboard/download/males', 'AdminController@downloadMales')->n
 Route::get('admin/dashboard/download/females', 'AdminController@downloadFemales')->name('admin.dashboard.download.females');
 Route::get('admin/dashboard/download/eleven', 'AdminController@downloadEleven')->name('admin.dashboard.download.eleven');
 Route::get('admin/dashboard/download/twelve', 'AdminController@downloadTwelve')->name('admin.dashboard.download.twelve');
+Route::get('admin/dashboard/download/elevenMales', 'AdminController@downloadElevenMales')->name('admin.dashboard.download.elevenMales');
+Route::get('admin/dashboard/download/elevenFemales', 'AdminController@downloadElevenFemales')->name('admin.dashboard.download.elevenFemales');
+Route::get('admin/dashboard/download/twelveMales', 'AdminController@downloadTwelveMales')->name('admin.dashboard.download.twelveMales');
+Route::get('admin/dashboard/download/twelveFemales', 'AdminController@downloadTwelveFemales')->name('admin.dashboard.download.twelveFemales');
 
 // Statistics
 Route::get('admin/statistics/main', 'AdminStatisticsController@main')->name('admin.statistics.main');
