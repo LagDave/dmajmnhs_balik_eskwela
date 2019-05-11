@@ -26,3 +26,9 @@ Route::get('/admin/dashboard/males', 'AdminController@males')->name('admin.dashb
 Route::get('/admin/dashboard/females', 'AdminController@females')->name('admin.dashboard.females');
 Route::get('/admin/dashboard/eleven', 'AdminController@eleven')->name('admin.dashboard.eleven');
 Route::get('/admin/dashboard/twelve', 'AdminController@twelve')->name('admin.dashboard.twelve');
+
+Route::get('admin/dashboard/download/all', 'AdminController@downloadAll')->name('admin.dashboard.download.all');
+Route::get('admin/dashboard/download/males', 'AdminController@downloadMales')->name('admin.dashboard.download.males');
+Route::get('admin/dashboard/download/females', 'AdminController@downloadFemales')->name('admin.dashboard.download.females');
+Route::get('admin/dashboard/download/eleven', 'AdminController@downloadEleven')->name('admin.dashboard.download.eleven');
+Route::get('admin/dashboard/download/twelve', 'AdminController@downloadTwelve')->name('admin.dashboard.download.twelve');

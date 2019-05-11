@@ -11,6 +11,6 @@ class DataSeeder extends Seeder
      */
     public function run()
     {
-        factory('App\Data', 50)->create();
+        factory('App\Data', 20)->create();
     }
 }

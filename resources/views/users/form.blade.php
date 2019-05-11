@@ -333,4 +333,43 @@
         <br>
         <button class="form-control btn btn-primary btn-lg">VALIDATE DATA</button>
     </form>
+
+
+
+
+
+    {{-- BRIEFING MODAL --}}
+
+    <!-- Modal -->
+    <div class="modal fade" id="briefing_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle"><img style="width:30px" src="{{asset('assets/images/dmaj_logo.png')}}" alt=""> <b>Welcome!</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="d-flex align-items-center flex-column justify-content-center modal-body">
+
+                    <img style="width:150px" src="{{asset('assets/images/dmaj_logo.png')}}" alt="">
+                    <p class="text-center mt-2 mb-1"><b>Don Manuel A. Javellana Memorial National High School</b></p>
+                    <small>Homeland Subd., Brgy. DAPCO, Panabo City</small>
+                    <br>
+                    <p class="text-danger"><b>Instructions:</b></p>
+                    <ul>
+                        <li>All fields with ' <span class="text-success"><i class="fas fa-star-of-life"></i></span> ' icon are <u>required</u>. Please fill them out accordingly otherwise, your data will not be submitted.</li>
+                        <li>Some fields are optional but <u>you are encouraged to fill out every field possible</u>.</li>
+                        <li>This will be the equivalent of the paper enrollment forms you've filled out in the past levels. Fill out the form honestly and as accurate as possible since <u>they will serve as school records</u>.</li>
+                    </ul>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Proceed to Form</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- Modal Script --}}
+    <script src="{{asset('js/users/briefing_modal.js')}}"></script>
 @endsection

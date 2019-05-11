@@ -44,8 +44,8 @@
                 <form method="POST" action="{{route('admin.dashboard.search')}}" class="form">
                     @csrf
                     <div class="form-group">
-                        <div class="input-group">
-                            <input placeholder="Search for a name..." name="key" type="text" class="form-control">
+                        <div class="input-group search">
+                            <input  placeholder="Search for a name..." name="key" type="text" class="form-control">
                             <div class="append">
                                 <button class="btn btn-primary"><i class="fas fa-search"></i></button>
                             </div>

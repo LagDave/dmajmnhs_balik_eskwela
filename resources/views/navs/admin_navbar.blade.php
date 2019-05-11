@@ -17,9 +17,23 @@
                 <li class="nav-item">
                     <a href="" class="nav-link">Statistics</a>
                 </li>
+            </ul>
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a href="" class="nav-link">Output</a>
+                    <div class="btn-group">
+                        <a style="cursor: pointer" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Output
+                        </a>
+                        <div class="navdrop dropdown-menu dropdown-menu-sm-right">
+                            <a class="dropdown-item" href="{{route('admin.dashboard.download.all')}}">All to Excel</a>
+                            <a class="dropdown-item" href="{{route('admin.dashboard.download.males')}}">Males to Excel</a>
+                            <a class="dropdown-item" href="{{route('admin.dashboard.download.females')}}">Females to Excel</a>
+                            <a class="dropdown-item" href="{{route('admin.dashboard.download.eleven')}}">Grade Eleven to Excel</a>
+                            <a class="dropdown-item" href="{{route('admin.dashboard.download.twelve')}}">Grade Twelve to Excel</a>
+                        </div>
+                    </div>
                 </li>
+
             </ul>
         </div>
     </div>

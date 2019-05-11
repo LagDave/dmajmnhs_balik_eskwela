@@ -23,6 +23,7 @@ body{
 
 }
 
+
 .accordion .card{
     box-shadow:none;
     border:1px solid #eee;
@@ -33,4 +34,10 @@ body{
 }
 .accordion .card-header:hover{
     background:#eee;
+}
+.dropdown-menu{
+    transform: translateX(50px);
+}
+.dropdown-menu .dropdown-item{
+    padding:5px 30px;
 }
