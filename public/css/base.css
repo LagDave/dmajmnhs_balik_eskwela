@@ -1,0 +1,36 @@
+body{
+    background:#fafafa;
+}
+.card{
+    border:none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
+}
+.form-label{
+    font-weight: bold;
+    color: #555
+}
+.nav-pills a{
+    transition:.1s;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+}
+.nav-pills a:hover{
+    background:#E95420;
+    color:white;
+    transform:scale(1.05, 1.05);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+.accordion .card{
+    box-shadow:none;
+    border:1px solid #eee;
+    transition:.1s;
+}
+.accordion .card.datum .card-header{
+    cursor: pointer;
+}
+.accordion .card-header:hover{
+    background:#eee;
+}
