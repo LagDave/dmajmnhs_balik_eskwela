@@ -331,7 +331,7 @@
             </div>
         </div>
         <br>
-        <button class="form-control btn btn-primary btn-lg">VALIDATE DATA</button>
+        <button class="form-control btn btn-primary btn-lg">VALIDATE &amp; SUBMIT DATA</button>
     </form>
 
 
