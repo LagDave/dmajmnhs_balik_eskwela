@@ -15,7 +15,7 @@
                     <a href="{{route('admin.dashboard')}}" class="nav-link">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Statistics</a>
+                    <a href="{{route('admin.statistics.main')}}" class="nav-link">Statistics</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">

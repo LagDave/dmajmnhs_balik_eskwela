@@ -356,16 +356,15 @@
                     <p class="text-center mt-2 mb-1"><b>Don Manuel A. Javellana Memorial National High School</b></p>
                     <small>Homeland Subd., Brgy. DAPCO, Panabo City</small>
                     <br>
-                    <p class="text-danger"><b>Instructions:</b></p>
+                    <p><b>Instructions:</b></p>
                     <ul>
-                        <li>All fields with ' <span class="text-success"><i class="fas fa-star-of-life"></i></span> ' icon are <u>required</u>. Please fill them out accordingly otherwise, your data will not be submitted.</li>
-                        <li>Some fields are optional but <u>you are encouraged to fill out every field possible</u>.</li>
-                        <li>This will be the equivalent of the paper enrollment forms you've filled out in the past levels. Fill out the form honestly and as accurate as possible since <u>they will serve as school records</u>.</li>
+                        <li><small class="text-muted">All fields with ' <span class="text-success"><i class="fas fa-star-of-life"></i></span> ' icon are required.</small></li>
+                        <li><small class="text-muted">Some fields are optional but you are encouraged to fill out every field possible.</small></li>
+                        <li><small class="text-muted">Fill out the form honestly and as accurate as possible since they will serve as school records.</small></li>
                     </ul>
-                    
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Proceed to Form</button>
+                    <button type="button" class="btn w-100 btn-primary" data-dismiss="modal">Proceed to Form</button>
                 </div>
             </div>
         </div>

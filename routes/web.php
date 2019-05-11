@@ -32,3 +32,7 @@ Route::get('admin/dashboard/download/males', 'AdminController@downloadMales')->n
 Route::get('admin/dashboard/download/females', 'AdminController@downloadFemales')->name('admin.dashboard.download.females');
 Route::get('admin/dashboard/download/eleven', 'AdminController@downloadEleven')->name('admin.dashboard.download.eleven');
 Route::get('admin/dashboard/download/twelve', 'AdminController@downloadTwelve')->name('admin.dashboard.download.twelve');
+
+// Statistics
+Route::get('admin/statistics/main', 'AdminStatisticsController@main')->name('admin.statistics.main');
+Route::get('admin/statistics/genderDensity', 'AdminStatisticsController@genderDensity')->name('admin.statistics.genderDensity');
