@@ -22,6 +22,19 @@
             </div>
 
             <div class="form-group">
+                <label class="form-label"><i class="fas text-success fa-star-of-life"></i> SHS Track</label>
+                <br>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="gas" name="track" value="gas" checked class="custom-control-input">
+                    <label class="custom-control-label" for="gas">General Academic Strand</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="tvl" name="track" value="tvl" class="custom-control-input">
+                    <label class="custom-control-label" for="tvl">Technical Vocational Livelihood</label>
+                </div>
+            </div>
+
+            <div class="form-group">
                 <label class="form-label"><i class="fas text-success fa-star-of-life"></i> Previous School</label>
                 <br>
                 <div class="custom-control custom-radio">

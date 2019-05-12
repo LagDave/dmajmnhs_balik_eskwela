@@ -18,6 +18,7 @@ class CreateDataTable extends Migration
             $table->timestamps();
 
             $table->unsignedInteger('admission_level');
+            $table->string('track');
             $table->string('previous_school');
             $table->bigInteger('lrn');
             $table->string('first_name');

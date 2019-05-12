@@ -16,6 +16,7 @@ class DataController extends Controller
     public function store(Request $request){
         $data = $request->validate([
             "admission_level"=> 'required',
+            'track'=>'required',
             "previous_school"=> 'required',
             "lrn"=> 'required',
             "first_name"=> 'required',

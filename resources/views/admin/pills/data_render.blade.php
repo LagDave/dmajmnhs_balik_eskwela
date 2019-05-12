@@ -19,6 +19,7 @@
                                 <br>
                                 <p>LRN: <b>{{$datum->lrn}}</b></p>
                                 <p>Admission Level: <b>Grade {{$datum->admission_level}}</b></p>
+                                <p>Track: <b>{{$datum->track}}</b></p>
                                 <p>Previous School: <b>{{strtoupper($datum->previous_school)}}</b></p>
                             </div>
 
