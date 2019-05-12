@@ -103,6 +103,19 @@ $factory->define(\App\Data::class, function (Faker $faker) {
         'domestic helper'
     ];
 
+    $track = [
+        'tvl',
+        'gas'
+    ];
+    $sa = [
+        'none',
+        'ip',
+        '4ps'
+    ];
+    $years = [
+      2002,
+    2001
+    ];
     $fake_first_name = $faker->firstNameMale;
     $fake_middle_name = $middlename[mt_rand(0, sizeof($middlename)-1)];
     $fake_last_name = $faker->lastName;
@@ -112,16 +125,19 @@ $factory->define(\App\Data::class, function (Faker $faker) {
         'admission_level'=> mt_rand(11, 12),
         'previous_school'=> $school[mt_rand(0, sizeof($school)-1 )],
         'lrn'=> $faker->randomNumber(),
+        'track'=>$track[mt_rand(0, sizeof($track)-1)],
         'first_name'=> $fake_first_name,
         'middle_name'=> $fake_middle_name,
         'last_name'=> $fake_last_name,
         'suffix'=> $fake_suffix,
         'gender'=> $gender[mt_rand(0, sizeof($gender)-1)],
-        'status'=> 'single',
         'citizenship'=> 'filipino',
-        'birthplace'=> $birthplace[mt_rand(0, sizeof($birthplace)-1)],
+        'birth_place'=>$birthplace[mt_rand(0, sizeof($birthplace)-1)],
+        'birth_month'=>mt_rand(1, 12),
+        'birth_day'=>mt_rand(1, 31),
+        'birth_year'=>$years[mt_rand(0, sizeof($years)-1)],
+        'social_assistance'=>$sa[mt_rand(0, sizeof($sa)-1)],
         'religion'=> $religion[mt_rand(0, sizeof($religion)-1)],
-        'birthdate'=> $faker->date('Y-m-d','now'),
         'barangay'=> $barangay[mt_rand(0, sizeof($barangay)-1)],
         'province'=> $province[mt_rand(0, sizeof($province)-1)],
         'city'=> $city[mt_rand(0, sizeof($city)-1)],

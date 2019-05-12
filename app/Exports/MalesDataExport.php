@@ -26,6 +26,7 @@ class MalesDataExport implements FromCollection, WithHeadings, ShouldAutoSize, W
             'enrolled_at',
             'updated_at',
             'admission_level',
+            'track',
             'previous_school',
             'lrn',
             'first_name',
@@ -33,11 +34,13 @@ class MalesDataExport implements FromCollection, WithHeadings, ShouldAutoSize, W
             'last_name',
             'suffix',
             'gender',
-            'status',
+            'social_assistance',
             'citizenship',
             'birthplace',
             'religion',
-            'birthdate',
+            'birth_month',
+            'birth_day',
+            'birth_year',
             'barangay',
             'province',
             'city',
@@ -63,7 +66,7 @@ class MalesDataExport implements FromCollection, WithHeadings, ShouldAutoSize, W
     {
         return [
             AfterSheet::class => function (AfterSheet $event) {
-                $event->sheet->getStyle('A1:N1')->applyFromArray([
+                $event->sheet->getStyle('A1:AM1')->applyFromArray([
                     'font' => [
                         'bold' => true,
                         'size'=>'13'

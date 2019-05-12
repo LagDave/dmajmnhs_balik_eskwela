@@ -206,7 +206,7 @@
                         <div class="col-lg-4">
                             <div class="form-group">
                                 <small class="text-muted">Year</small>
-                                <input name="birth_year" type="number" placeholder="19" class="form-control">
+                                <input name="birth_year" type="number" placeholder="2001" class="form-control">
                             </div>
                         </div>
                     </div>

@@ -24,6 +24,7 @@ class ElevenDataExport implements FromCollection, WithHeadings, ShouldAutoSize, 
             'enrolled_at',
             'updated_at',
             'admission_level',
+            'track',
             'previous_school',
             'lrn',
             'first_name',
@@ -31,11 +32,13 @@ class ElevenDataExport implements FromCollection, WithHeadings, ShouldAutoSize, 
             'last_name',
             'suffix',
             'gender',
-            'status',
+            'social_assistance',
             'citizenship',
             'birthplace',
             'religion',
-            'birthdate',
+            'birth_month',
+            'birth_day',
+            'birth_year',
             'barangay',
             'province',
             'city',
@@ -61,7 +64,7 @@ class ElevenDataExport implements FromCollection, WithHeadings, ShouldAutoSize, 
     {
         return [
             AfterSheet::class => function (AfterSheet $event) {
-                $event->sheet->getStyle('A1:N1')->applyFromArray([
+                $event->sheet->getStyle('A1:AM1')->applyFromArray([
                     'font' => [
                         'bold' => true,
                         'size'=>'13'
