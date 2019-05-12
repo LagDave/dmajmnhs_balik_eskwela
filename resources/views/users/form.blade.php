@@ -420,4 +420,14 @@
     </div>
     {{-- Modal Script --}}
     <script src="{{asset('js/users/briefing_modal.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).keydown(function(event){
+                if(event.keyCode == 13) {
+                    event.preventDefault();
+                    return false;
+                }
+            });
+        });
+    </script>
 @endsection
