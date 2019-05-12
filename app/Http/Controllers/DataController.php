@@ -44,7 +44,7 @@ class DataController extends Controller
         $guardian_data->father_name = strtolower($data['father_first_name']).' '.strtolower($data['father_last_name']);
         $guardian_data->mother_name = strtolower($data['mother_first_name']).' '.strtolower($data['mother_last_name']);
         $guardian_data->guardian_name = strtolower($data['guardian_first_name']).' '.strtolower($data['guardian_last_name']);
-
+        $guardian_data->data_admission_level = $data['admission_level'];
 
 
         if($student = Data::create($data)){

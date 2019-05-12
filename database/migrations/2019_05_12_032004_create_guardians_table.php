@@ -19,6 +19,7 @@ class CreateGuardiansTable extends Migration
             $table->string('father_name');
             $table->string('mother_name');
             $table->string('guardian_name');
+            $table->string('data_admission_level');
             $table->unsignedInteger('data_id');
         });
     }
