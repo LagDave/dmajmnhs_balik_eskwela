@@ -9,7 +9,11 @@ use App\Exports\ElevenDataExport;
 use App\Exports\ElevenFemalesExport;
 use App\Exports\ElevenMalesExport;
 use App\Exports\FemalesDataExport;
+use App\Exports\GasElevenExport;
+use App\Exports\GasTwelveExport;
 use App\Exports\MalesDataExport;
+use App\Exports\TvlElevenExport;
+use App\Exports\TvlTwelveExport;
 use App\Exports\TwelveDataExport;
 use App\Exports\TwelveFemalesExport;
 use App\Exports\TwelveMalesExport;
@@ -106,6 +110,19 @@ class AdminController extends Controller
     }
     public function downloadTwelveFemales(){
         return Excel::download(new TwelveFemalesExport(), 'grade_twelve_females.xlsx');
+    }
+
+    public function downloadGasEleven(){
+        return Excel::download(new GasElevenExport(), 'gas_grade_eleven.xlsx');
+    }
+    public function downloadGasTwelve(){
+        return Excel::download(new GasTwelveExport(), 'gas_grade_twelve.xlsx');
+    }
+    public function downloadTvlEleven(){
+        return Excel::download(new TvlElevenExport(), 'tvl_grade_eleven.xlsx');
+    }
+    public function downloadTvlTwelve(){
+        return Excel::download(new TvlTwelveExport(), 'tvl_grade_twelve.xlsx');
     }
 
 }

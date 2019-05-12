@@ -35,12 +35,22 @@
                             <a class="dropdown-item" href="{{route('admin.dashboard.download.twelve')}}"><i class="fas fa-download text-primary"></i> Grade Twelve to Excel</a>
                             <div class="dropdown-divider"></div>
                             <div class="dropdown-header">
-                                Separated Data
+                                Categorized Data
                             </div>
-                            <a class="dropdown-item" href="{{route('admin.dashboard.download.elevenMales')}}"><i class="fas fa-download text-primary"></i> Grade Eleven Males to Excel</a>
-                            <a class="dropdown-item" href="{{route('admin.dashboard.download.elevenFemales')}}"><i class="fas fa-download text-primary"></i> Grade Eleven Females to Excel</a>
-                            <a class="dropdown-item" href="{{route('admin.dashboard.download.twelveMales')}}"><i class="fas fa-download text-primary"></i> Grade Twelve Males to Excel</a>
-                            <a class="dropdown-item" href="{{route('admin.dashboard.download.twelveFemales')}}"><i class="fas fa-download text-primary"></i> Grade Twelve Females to Excel</a>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="{{route('admin.dashboard.download.elevenMales')}}"><i class="fas fa-download text-primary"></i> Grade Eleven Males to Excel</a>
+                                    <a class="dropdown-item" href="{{route('admin.dashboard.download.elevenFemales')}}"><i class="fas fa-download text-primary"></i> Grade Eleven Females to Excel</a>
+                                    <a class="dropdown-item" href="{{route('admin.dashboard.download.twelveMales')}}"><i class="fas fa-download text-primary"></i> Grade Twelve Males to Excel</a>
+                                    <a class="dropdown-item" href="{{route('admin.dashboard.download.twelveFemales')}}"><i class="fas fa-download text-primary"></i> Grade Twelve Females to Excel</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a class="dropdown-item" href="{{route('admin.dashboard.download.downloadGasEleven')}}"><i class="fas fa-download text-primary"></i> Grade 11 GAS</a>
+                                    <a class="dropdown-item" href="{{route('admin.dashboard.download.downloadGasTwelve')}}"><i class="fas fa-download text-primary"></i> Grade 12 GAS</a>
+                                    <a class="dropdown-item" href="{{route('admin.dashboard.download.downloadTvlEleven')}}"><i class="fas fa-download text-primary"></i> Grade 11 TVL</a>
+                                    <a class="dropdown-item" href="{{route('admin.dashboard.download.downloadTvlTwelve')}}"><i class="fas fa-download text-primary"></i> Grade 12 TVL</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </li>
