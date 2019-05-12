@@ -47,3 +47,4 @@ Route::get('admin/dashboard/download/tvlTwelve', 'AdminController@downloadTvlTwe
 // Statistics
 Route::get('admin/statistics/main', 'AdminStatisticsController@main')->name('admin.statistics.main');
 Route::get('admin/statistics/genderDensity', 'AdminStatisticsController@genderDensity')->name('admin.statistics.genderDensity');
+Route::get('admin/statistics/guardiansDensity', 'AdminStatisticsController@guardiansDensity')->name('admin.statistics.guardiansDensity');

@@ -33,6 +33,7 @@
                     <br>
                     <a href="{{route('admin.statistics.main')}}" class="nav-link">All Enrollees</a>
                     <a href="{{route('admin.statistics.genderDensity')}}" class="nav-link">Gender per Level Density</a>
+                    <a href="{{route('admin.statistics.guardiansDensity')}}" class="nav-link">Guardians Density</a>
                 </div>
             </div>
         </div>

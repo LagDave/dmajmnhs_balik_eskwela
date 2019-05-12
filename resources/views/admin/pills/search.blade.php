@@ -81,6 +81,7 @@
                                                 <br>
                                                 <p>LRN: <b>{{$datum->lrn}}</b></p>
                                                 <p>Admission Level: <b>Grade {{$datum->admission_level}}</b></p>
+                                                <p>Track: <b>{{$datum->track}}</b></p>
                                                 <p>Previous School: <b>{{strtoupper($datum->previous_school)}}</b></p>
                                             </div>
 
@@ -89,11 +90,11 @@
                                                 <br>
                                                 <p>Name: <b>{{$datum->first_name}} {{$datum->middle_name}} {{$datum->last_name}} {{$datum->suffix}}</b></p>
                                                 <p>Gender: <b>{{$datum->gender}}</b></p>
-                                                <p>Status: <b>{{$datum->status}}</b></p>
+                                                <p>Social Assistance Program: <b>{{$datum->social_assistance}}</b></p>
                                                 <p>Citizenship: <b>{{$datum->citizenship}}</b></p>
                                                 <p>Birthplace: <b>{{$datum->birthplace}}</b></p>
                                                 <p>Religion: <b>{{$datum->religion}}</b></p>
-                                                <p>Birth Date: <b>{{$datum->birthdate}}</b></p>
+                                                <p>Birth Date: <small class="text-muted">(Month-Day-Year)</small> <b>{{$datum->birth_month}}-{{$datum->birth_day}}-{{$datum->birth_year}}</b></p>
                                             </div>
 
                                             <div class="card mb-3 card-body">
@@ -145,6 +146,7 @@
                         </div>
                     @endforeach
                 </div>
+                <br>
             </div>
         </div>
     </div>

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Data;
+use App\Guardian;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AdminStatisticsController extends Controller
 {
@@ -25,5 +27,12 @@ class AdminStatisticsController extends Controller
         $total_males_twelve = sizeof(Data::where(['gender'=> 'male', 'admission_level'=> 12])->get());
         $total_females_twelve = sizeof(Data::where(['gender'=> 'female', 'admission_level' => 12])->get());
         return view('admin.statistics.gender_density', compact('total_males_eleven', 'total_females_eleven', 'total_males_twelve', 'total_females_twelve'));
+    }
+    public function guardiansDensity(){
+        $total_distinct_fathers = sizeof(DB::select("SELECT DISTINCT father_name FROM guardians WHERE father_name != ''"));
+        $total_distinct_mothers = sizeof(DB::select("SELECT DISTINCT mother_name FROM guardians WHERE mother_name != ''"));
+        $total_distinct_guardians = sizeof(DB::select("SELECT DISTINCT guardian_name FROM guardians WHERE guardian_name != ''"));
+
+        return view('admin.statistics.guardians_density', compact('total_distinct_fathers', 'total_distinct_mothers', 'total_distinct_guardians'));
     }
 }

@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Data extends Model
 {
+
+    public function guardian(){
+        return $this->hasOne('App\Guardian');
+    }
+
     protected $guarded = [
         'id'
     ];
@@ -22,7 +27,7 @@ class Data extends Model
         $value != null ? $this->attributes['last_name'] = ucwords(strtolower($value)) : $value;
     }
     public function setSuffixAttribute($value){
-        $value != null ? $this->attributes['suffix'] = ucwords(strtolower($value)) : $value;
+        $value != null ? $this->attributes['suffix'] = strtoupper($value) : $value;
     }
     public function setGenderAttribute($value){
         $value != null ? $this->attributes['gender'] = ucwords(strtolower($value)) : $value;
