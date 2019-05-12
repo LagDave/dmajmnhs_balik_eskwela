@@ -133,21 +133,9 @@
                                             <div class="card card-body mb-3">
                                                 <h5 class="text-primary"><i class="fas fa-phone"></i> <b>Contact Information</b></h5>
                                                 <br>
-                                                <p>Telephone: <b>
-                                                        @if($datum->telephone_number == null)
-                                                            N/A
-                                                        @else
-                                                            {{$datum->telephone_number}}
-                                                        @endif
-                                                    </b></p>
+                                                <p>Telephone: <b>{{$datum->telephone_number}}</b></p>
                                                 <p>Cellphone: <b>{{$datum->cellphone_number}}</b></p>
-                                                <p>Email: <b>
-                                                        @if($datum->email == null)
-                                                            N/A
-                                                        @else
-                                                            {{$datum->email}}
-                                                        @endif
-                                                    </b></p>
+                                                <p>Email: <b>{{$datum->email}}</b></p>
                                             </div>
 
                                         </div>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <form method="POST" action="{{route('data.store')}}" class="form">
+    <form method="POST" action="{{route('data.store')}}" class="form main-form">
         @csrf
 
         {{-- EDUCATIONAL INFORMATION --}}
@@ -108,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row align-items-lg-end">
                 <div class="col-lg-4">
                     <div class="form-group">
                         <label class="form-label"><i class="fas text-success fa-star-of-life"></i> Gender</label>
@@ -143,7 +143,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row align-items-end">
                 <div class="col-lg-4">
                     <div class="form-group">
                         <label class="form-label"><i class="fas text-success fa-star-of-life"></i> Birthplace</label>
@@ -157,9 +157,26 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="form-group">
-                        <label class="form-label"><i class="fas text-success fa-star-of-life"></i> Birth Date</label>
-                        <input type="date" name="birthdate" required class="form-control">
+                    <label class="form-label"><i class="fas text-success fa-star-of-life"></i> Birth Date</label>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <small class="text-muted">Month</small>
+                                <input name="birth_month" type="number" placeholder="12" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <small class="text-muted">Day</small>
+                                <input name="birth_day" type="number" placeholder="25" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <small class="text-muted">Year</small>
+                                <input name="birth_year" type="number" placeholder="19" class="form-control">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -211,7 +228,7 @@
                 <div class="col-lg-4">
                     <div class="form-group">
                         <label class="form-label"><i class="fas text-success fa-star-of-life"></i> Cellphone Number</label>
-                        <input type="text" name="cellphone_number" required class="form-control">
+                        <input type="number" name="cellphone_number" required class="form-control">
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -251,7 +268,7 @@
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label class="form-label">Father's Mobile Number</label>
-                        <input type="text" name="father_mobile_number" class="form-control">
+                        <input type="number" name="father_mobile_number" class="form-control">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -285,7 +302,7 @@
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label class="form-label">Mother's Mobile Number</label>
-                        <input type="text" name="mother_mobile_number" class="form-control">
+                        <input type="number" name="mother_mobile_number" class="form-control">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -319,7 +336,7 @@
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label class="form-label">Guardian's Mobile Number</label>
-                        <input type="text" name="guardian_mobile_number" class="form-control">
+                        <input type="number" name="guardian_mobile_number" class="form-control">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -331,7 +348,7 @@
             </div>
         </div>
         <br>
-        <button class="form-control btn btn-primary btn-lg">VALIDATE &amp; SUBMIT DATA</button>
+        <button class="form-control btn btn-primary btn-lg submit-data-button">VALIDATE &amp; SUBMIT DATA</button>
     </form>
 
 

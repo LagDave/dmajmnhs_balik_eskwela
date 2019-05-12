@@ -13,6 +13,7 @@
 
 Route::get('/', 'DataController@index')->name('data.index');
 Route::post('/data/store', 'DataController@store')->name('data.store');
+Route::get('/data/success', 'DataController@success')->name('data.success');
 
 
 Route::get('/admin', 'AdminController@index')->name('admin.index');

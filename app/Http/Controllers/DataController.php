@@ -25,7 +25,9 @@ class DataController extends Controller
             "citizenship"=> 'required',
             "birthplace"=> 'required',
             "religion"=> 'required',
-            "birthdate"=> 'required',
+            "birth_month"=>'required',
+            'birth_day'=>'required',
+            'birth_year'=>'required',
             "barangay"=> 'required',
             "province"=> 'required',
             "city"=> 'required',
@@ -36,8 +38,12 @@ class DataController extends Controller
         $fullname = strtolower($request->all()['first_name'].' '.$request->all()['middle_name'].' '.$request->all()['last_name'].' '.$request->all()['suffix']);
         $data['full_name'] = $fullname;
         if(Data::create($data)){
+            return redirect(route('data.success'));
+        }
+    }
+
+
+        public function success(){
             return view('users.success');
         }
-
-    }
 }

@@ -30,7 +30,11 @@ class CreateDataTable extends Migration
             $table->string('citizenship');
             $table->text('birthplace');
             $table->string('religion');
-            $table->dateTime('birthdate');
+
+            $table->integer('birth_month');
+            $table->integer('birth_day');
+            $table->integer('birth_year');
+
             $table->string('barangay');
             $table->string('province');
             $table->string('city');
