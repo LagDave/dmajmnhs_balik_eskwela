@@ -131,8 +131,27 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="form-group">
-                        <label class="form-label"><i class="fas text-success fa-star-of-life"></i> Status</label>
-                        <input placeholder='e.g Single' type="text" name="status" required class="form-control">
+                        <label class="form-label"><i class="fas text-success fa-star-of-life"></i> Social Assistance Program</label>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="none" name="social_assistance" checked value="none" class="custom-control-input">
+                                    <label class="custom-control-label" for="none">None</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="ip" name="social_assistance" value="ip" class="custom-control-input">
+                                    <label class="custom-control-label" for="ip">IP</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="4ps" name="social_assistance" value="4ps" class="custom-control-input">
+                                    <label class="custom-control-label" for="4ps">4P's</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4">

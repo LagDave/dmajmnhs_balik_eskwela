@@ -21,13 +21,13 @@ class DataController extends Controller
             "first_name"=> 'required',
             "last_name"=> 'required',
             "gender"=> 'required',
-            "status"=> 'required',
             "citizenship"=> 'required',
             "birthplace"=> 'required',
             "religion"=> 'required',
             "birth_month"=>'required',
             'birth_day'=>'required',
             'birth_year'=>'required',
+            'social_assistance'=>'required',
             "barangay"=> 'required',
             "province"=> 'required',
             "city"=> 'required',
@@ -43,7 +43,7 @@ class DataController extends Controller
     }
 
 
-        public function success(){
-            return view('users.success');
-        }
+    public function success(){
+        return view('users.success');
+    }
 }
