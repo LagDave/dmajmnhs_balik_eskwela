@@ -17,17 +17,17 @@ class Data extends Model
 
 //    SET ATTRIBS
     public function setFirstNameAttribute($value){
-        $value != null ? $this->attributes['first_name'] = ucwords(strtolower($value)) : $value;
+        $value != null ? $this->attributes['first_name'] = ucwords(trim(preg_replace('/\s+/',' ', strtolower($value)))) : $value;
 
     }
     public function setMiddleNameAttribute($value){
-        $value != null ? $this->attributes['middle_name'] = ucwords(strtolower($value)) : $value;
+        $value != null ? $this->attributes['middle_name'] = ucwords(trim(preg_replace('/\s+/',' ', strtolower($value)))) : $value;
     }
     public function setLastNameAttribute($value){
-        $value != null ? $this->attributes['last_name'] = ucwords(strtolower($value)) : $value;
+        $value != null ? $this->attributes['last_name'] = ucwords(trim(preg_replace('/\s+/',' ', strtolower($value)))) : $value;
     }
     public function setSuffixAttribute($value){
-        $value != null ? $this->attributes['suffix'] = strtoupper($value) : $value;
+        $value != null ? $this->attributes['suffix'] = trim(preg_replace('/\s+/',' ', strtoupper($value))) : $value;
     }
     public function setGenderAttribute($value){
         $value != null ? $this->attributes['gender'] = ucwords(strtolower($value)) : $value;
@@ -84,5 +84,7 @@ class Data extends Model
     public function setGuardianOccupationAttribute($value){
         $value != null ? $this->attributes['guardian_occupation'] = ucwords(strtolower($value)) : $value;
     }
-
+    public function setFullNameAttribute($value){
+        $this->attributes['full_name'] = trim(preg_replace('/\s+/',' ', strtolower($value)));
+    }
 }

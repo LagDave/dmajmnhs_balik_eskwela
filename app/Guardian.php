@@ -10,4 +10,13 @@ class Guardian extends Model
     public function data(){
         return $this->belongsTo('App\Data');
     }
+    public function setFatherNameAttribute($value){
+        $this->attributes['father_name'] = trim(preg_replace('/\s+/',' ', $value));
+    }
+    public function setMotherNameAttribute($value){
+        $this->attributes['mother_name'] = trim(preg_replace('/\s+/',' ', $value));
+    }
+    public function setGuardianNameAttribute($value){
+        $this->attributes['guardian_name'] = trim(preg_replace('/\s+/',' ', $value));
+    }
 }
