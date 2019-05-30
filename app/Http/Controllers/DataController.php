@@ -5,12 +5,42 @@ namespace App\Http\Controllers;
 use App\Data;
 use App\Guardian;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
 
 class DataController extends Controller
 {
+
+    public function __construct(){
+        $this->middleware('isMachineValid')->except(['invalidMachine', 'setupPage', 'setupValidate']);
+    }
+
 //    This will show the form
     public function index(){
         return view('users.form');
+    }
+
+    // Machine Validation
+    public function invalidMachine(){
+        return view('users.invalid_machine');
+    }
+    public function setupPage(){
+        return view('users.setup_machine');
+    }
+    public function setupValidate(Request $request){
+        $typed_registration_key = $request->all()['secret_registration_key'];
+        $secret_registration_key = 'dmajmachine0530';
+
+        if($typed_registration_key == $secret_registration_key){
+            Cookie::queue(Cookie::make('valid_machine', 'true', 7200));
+            return redirect(route('data.index'));
+        }else{
+            return redirect(route('data.setupPage'))->with('failed', 'Invalid Registration Key');
+        }
+    }
+
+    public function invalidateMachine(){
+        Cookie::queue(Cookie::forget('valid_machine'));
+        return redirect(route('data.setupPage'));
     }
 
 //    This will validate and store the form

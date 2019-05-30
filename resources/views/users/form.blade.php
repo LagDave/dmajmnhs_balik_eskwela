@@ -194,19 +194,19 @@
                         <div class="col-lg-4">
                             <div class="form-group">
                                 <small class="text-muted">Month</small>
-                                <input name="birth_month" type="number" placeholder="12" class="form-control">
+                                <input name="birth_month" type="number" placeholder="e.g. 12" class="form-control">
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="form-group">
                                 <small class="text-muted">Day</small>
-                                <input name="birth_day" type="number" placeholder="25" class="form-control">
+                                <input name="birth_day" type="number" placeholder="e.g. 25" class="form-control">
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="form-group">
                                 <small class="text-muted">Year</small>
-                                <input name="birth_year" type="number" placeholder="2001" class="form-control">
+                                <input name="birth_year" type="number" placeholder="e.g. 2001" class="form-control">
                             </div>
                         </div>
                     </div>

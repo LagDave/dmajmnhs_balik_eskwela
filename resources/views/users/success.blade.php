@@ -5,7 +5,7 @@
         <i style="font-size: 6em;" class="fas text-success fa-check-circle success-icon"></i>
         <br>
         <h1 style="color:#777">CONGRATULATIONS!</h1>
-        <p style="color:#999; width:500px" class="text-center"><b class="text-success">You are now enrolled!</b></p>
+        <p style="color:#999; max-width:500px" class="text-center"><b class="text-success">You are now enrolled!</b></p>
     </div>
 
     
