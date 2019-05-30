@@ -57,6 +57,6 @@ class DataController extends Controller
 
 
     public function success(){
-        return view('users.success');
+        return view('users.success');   
     }
 }

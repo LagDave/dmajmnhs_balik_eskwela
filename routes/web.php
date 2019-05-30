@@ -18,6 +18,7 @@ Route::get('/data/success', 'DataController@success')->name('data.success');
 
 Route::get('/admin', 'AdminController@index')->name('admin.index');
 Route::post('/admin/validateLogin', 'AdminController@validateLogin')->name('admin.validateLogin');
+Route::get('/admin/logout', 'AdminController@logout')->name('admin.logout');
 Route::get('/admin/dashboard', 'AdminController@dashboard')->name('admin.dashboard');
 Route::post('/admin/dashboard/search', 'AdminController@search')->name('admin.dashboard.search');
 

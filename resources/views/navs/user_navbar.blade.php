@@ -1,4 +1,4 @@
-<nav class="shadow sticky-top navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="shadow navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
         <a class="navbar-brand py-0" href="#">
             <img style="width: 50px;"

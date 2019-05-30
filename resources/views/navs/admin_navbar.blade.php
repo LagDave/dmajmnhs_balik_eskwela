@@ -55,6 +55,9 @@
                     </div>
                 </li>
 
+                <li class="nav-item">
+                    <a href="{{route('admin.logout')}}" class="nav-link">Logout</a>
+                </li>
             </ul>
         </div>
     </div>

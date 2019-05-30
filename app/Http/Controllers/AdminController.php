@@ -48,6 +48,12 @@ class AdminController extends Controller
 
     }
 
+    public function logout(Request $request){
+        // Log user out by deleting remember session
+        $request->session()->flush(['is_admin']);
+        return redirect(route('data.index'));
+    }
+
 //    Dashboard Pills
     public function dashboard(){
         return redirect(route('admin.dashboard.all'));

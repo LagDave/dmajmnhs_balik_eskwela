@@ -8,6 +8,8 @@
         <p style="color:#999; width:500px" class="text-center"><b class="text-success">You are now enrolled!</b></p>
     </div>
 
+    
+    <script src="{{asset('js/users/sound.js')}}"></script>
     <script>
         $.playSound('{{asset('assets/audio/notification.mp3')}}');
         setTimeout(function(){
